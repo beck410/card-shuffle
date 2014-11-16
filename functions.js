@@ -1,7 +1,7 @@
 var showCards = document.getElementById("cards");
 showCards.onclick = function(){ 
   var cardContainer = document.getElementById('container');
-  cardContainer.innerHTML("");
+  cardContainer.innerHTML = "";
   displayCards() 
 };
 
