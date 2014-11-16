@@ -1,5 +1,9 @@
 var showCards = document.getElementById("cards");
-showCards.onclick = function(){ displayCards() };
+showCards.onclick = function(){ 
+  var cardContainer = document.getElementById('container');
+  cardContainer.innerHTML("");
+  displayCards() 
+};
 
 //creates a deck of 52 cards - each card object has a suit,card and points 
 function newDeck(){
