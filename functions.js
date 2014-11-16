@@ -39,7 +39,7 @@ function displayCards(){
     var card = document.createElement('div');
     card.className = "card";
     var cardContainer = document.getElementById('container');
-    cardContainer.insertBefore(card, cardContainer.nextSibling);
+    cardContainer += card
     //URL NOT WORKING
     card.style.backgroundImage = "url(card-img/" + shuffledCards[i].suit + "-" + shuffledCards[i].card + ".png" + ")";
   }
